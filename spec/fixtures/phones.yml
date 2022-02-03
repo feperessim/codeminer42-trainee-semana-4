@@ -1,0 +1,5 @@
+phone_contact_one:
+  phone: 2222-2222
+  kind: 'home'
+  main: true
+  contact: contact_one
