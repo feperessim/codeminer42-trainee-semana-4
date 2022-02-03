@@ -1,5 +1,11 @@
 phone_contact_one:
-  phone: 2222-2222
+  number: 2222-2222
   kind: 'home'
   main: true
+  contact: contact_one
+
+phone_contact_two:
+  number: 1111-1111
+  kind: 'home'
+  main: false
   contact: contact_one
