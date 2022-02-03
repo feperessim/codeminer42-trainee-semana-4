@@ -1,24 +1,57 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of Contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Using and testing](#using-and-testing)
 
-Things you may want to cover:
+## General info
 
-* Ruby version
+The aim of this repository is to track week 4 challenge. 
 
-* System dependencies
+## Technologies
 
-* Configuration
+The project was created with the following technologies:
 
-* Database creation
+* Ruby Version Manager (RVM): rvm 1.29.12
+* Ruby Interpreter: ruby 3.1.0p0
+* Bundle: Bundler 2.3.5
+* Rails 6.1.4.4
+* Rspec: rspec-rails  5.0.0
 
-* Database initialization
+## Setup
+To run this project you need to follow the following instructions:
 
-* How to run the test suite
+### 1. Setting up the project and running it
+1. Clone this repository in your localhost machine;
+2. Navigate into the newly cloned repository;
+3. Run bundle install to install the dependencies.
 
-* Services (job queues, cache servers, search engines, etc.)
+#### 1.1. Instructions:
+```console
+foo@bar:~$ git clone https://github.com/feperessim/codeminer42-trainee-semana-4
+foo@bar:~$ cd codeminer42-trainee-semana-4/
+foo@bar:~$ bundle install
+```
 
-* Deployment instructions
+## Using and testing
 
-* ...
+#### 1.1. Instructions:
+
+* 1. To play with the models directly
+
+```console
+foo@bar:~$ bin/rails console
+```
+
+* 2. Running rspec 
+
+```console
+foo@bar:~$ bundle exec rspec
+```
+or
+
+```console
+foo@bar:~$ bundle rspec --format documentation
+```
