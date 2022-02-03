@@ -42,7 +42,9 @@ foo@bar:~$ bundle install
 * 1. To play with the models directly
 
 ```console
+foo@bar:~$ bin/rails db:migrate
 foo@bar:~$ bin/rails console
+foo@bar:~$ User.create(name:"Your name", age: 100, biography: A biography)
 ```
 
 * 2. Running rspec 
