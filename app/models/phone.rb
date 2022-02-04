@@ -1,6 +1,6 @@
 class Phone < ApplicationRecord
   belongs_to :contact
-  validates :number, presence: true
+  validates :number, presence: true, uniqueness: { scope: :contact_id }
   validates :kind, inclusion: %w[home work other]
   validates :main, inclusion: [true, false]
   validates :main, uniqueness: {
