@@ -30,10 +30,9 @@ To run this project you need to follow the following instructions:
 
 #### 1.1. Instructions:
 ```console
-foo@bar:~$ git clone https://github.com/feperessim/codeminer42-trainee-semana-4
-foo@bar:~$ cd codeminer42-trainee-semana-4/
-foo@bar:~$ bundle install
-```
+$ git clone https://github.com/feperessim/codeminer42-trainee-semana-4
+$ cd codeminer42-trainee-semana-4/
+$ bundle install
 
 ## Using and testing
 
