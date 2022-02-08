@@ -33,6 +33,7 @@ To run this project you need to follow the following instructions:
 $ git clone https://github.com/feperessim/codeminer42-trainee-semana-4
 $ cd codeminer42-trainee-semana-4/
 $ bundle install
+```
 
 ## Using and testing
 
@@ -41,18 +42,18 @@ $ bundle install
 * 1. To play with the models directly
 
 ```console
-foo@bar:~$ bin/rails db:migrate
-foo@bar:~$ bin/rails console
-foo@bar:~$ User.create(name:"Your name", age: 100, biography: A biography)
+$ bin/rails db:migrate
+$ bin/rails console
+$ User.create(name:"Your name", age: 100, biography: A biography)
 ```
 
 * 2. Running rspec 
 
 ```console
-foo@bar:~$ bundle exec rspec
+$ bundle exec rspec
 ```
 or
 
 ```console
-foo@bar:~$ bundle rspec --format documentation
+$ bundle rspec --format documentation
 ```
