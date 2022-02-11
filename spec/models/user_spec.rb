@@ -3,7 +3,7 @@ require 'rails_helper'
 describe User do
   fixtures :users
 
-  it 'create a simple when the name is present and is unique, and the age >= 0 when it is present' do
+  it 'create a user when the name is present and is unique, and the age >= 0 when it is present' do
     User.create(name: 'Test name', age: 50, biography: 'A biography')
     expect(User.count).to eq 2
   end
