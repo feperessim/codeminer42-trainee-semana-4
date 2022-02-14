@@ -1,2 +1,22 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<table class="table">
+  <caption><h1>Users</h1></caption>
+  <thead>
+    <tr>
+      <th class="table__th">Username</th>
+      <th class="table__th">Contacts</th>
+      <th class="table__th">Phones</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+    <tr class="table__tr">
+      <td class="table__td"><%= user.name %></td>
+      <td class="table__td"><%= user.contacts.length %></td>
+      <td class="table__td"><%= user.contacts.map { |contact| contact.phones.length }.reduce(0, :+) %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+

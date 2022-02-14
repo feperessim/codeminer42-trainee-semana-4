@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+@import  'settings/_settings.css';
+@import 'generic/_box-sizing.css';
+@import 'generic/_resets.css';
+@import 'components/_table.css';

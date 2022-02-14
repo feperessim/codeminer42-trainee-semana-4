@@ -1,0 +1,17 @@
+:root {
+    --color-blue-gray-solid: #6192c6;
+    --color-azureish-white: #d8dfec;
+    --color-anti-flash-white: #edf0f5;
+    --color-gainsboro: #dddddd;
+    --color-white: #ffffff;
+    
+    --table-border: 1px solid white;
+    --table-margin: auto;
+    --table-width: 50%;
+    --table-th-border: 1px solid white;
+    --table-th-padding: 0.5rem;
+    --table-th-font-size: 20px;
+    --table-td-border: 1px solid white;
+    --table-td-padding: 0.5rem;
+    --table-td-font-size: 18px;
+}
