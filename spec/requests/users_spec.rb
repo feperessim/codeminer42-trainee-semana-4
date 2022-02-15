@@ -1,11 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe "Users", type: :request do
+  fixtures :users
+  
   describe "GET /users" do
+    subject (:user) { users(:trainee) }
+    
     it "returns http success" do
-      get "/users"
-      expect(response).to have_http_status(:success)
-      expect(@controller.view_assigns["users"]).not_to be_nil
+      get "/users"      
+      expect(response).to have_http_status(:success)      
+      expect(assigns(:users)).to eq([user])
     end
   end
 
