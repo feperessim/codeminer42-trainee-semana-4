@@ -5,6 +5,7 @@ RSpec.describe "Users", type: :request do
     it "returns http success" do
       get "/users"
       expect(response).to have_http_status(:success)
+      expect(@controller.view_assigns["users"]).not_to be_nil
     end
   end
 

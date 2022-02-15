@@ -9,13 +9,14 @@
   </thead>
 
   <tbody>
-    <% @users.each do |user| %>
-    <tr class="table__tr">
-      <td class="table__td"><%= user.name %></td>
-      <td class="table__td"><%= user.contacts.length %></td>
-      <td class="table__td"><%= user.contacts.map { |contact| contact.phones.length }.reduce(0, :+) %></td>
-    </tr>
+    <% if !@users.nil? %>>
+      <% @users.each do |user| %>
+	<tr class="table__tr">
+	  <td class="table__td"><%= user.name %></td>
+	  <td class="table__td"><%= user.contacts.length %></td>
+	  <td class="table__td"><%= user.phones.length %></td>
+	</tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>
-
