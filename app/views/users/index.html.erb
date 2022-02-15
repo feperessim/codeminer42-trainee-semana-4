@@ -1,0 +1,24 @@
+<% if @users %>
+  <table class="table">
+    <caption><h1>Users</h1></caption>
+    <thead>
+      <tr>
+	<th class="table__th">Username</th>
+	<th class="table__th">Contacts</th>
+	<th class="table__th">Phones</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <% @users.each do |user| %>
+	<tr class="table__tr">
+	  <td class="table__td"><%= user.name %></td>
+	  <td class="table__td"><%= user.contacts.length %></td>
+	  <td class="table__td"><%= user.phones.length %></td>
+	</tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <h2>Error! Could not retrieve Users from database</h2>
+<% end %>

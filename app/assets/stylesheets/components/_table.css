@@ -1,0 +1,35 @@
+.table {
+    border:  var(--table-border);
+    border-collapse: collapse;
+    margin:  var(--table-margin);
+    width: var(--table-width);
+    text-align: center;
+}
+
+.table__th {
+    border: var(--table-th-border);
+    padding: var(--table-th-padding);
+    background-color: var(--color-blue-gray-solid);
+    color: var(--color-white);
+    font-size: var(--table-th-font-size);
+}
+
+.table__td {
+    border: var(--table-td-border);
+    padding: var(--table-td-padding);
+    font-size: var(--table-td-font-size);
+}
+
+.table__tr:nth-child(even) {
+    background-color: var(--color-azureish-white);
+}
+
+ .table__tr:nth-child(odd) {
+     background-color: var(--color-anti-flash-white);
+}
+
+.table__tr:hover {
+    background-color: var(--color-gainsboro);
+}
+
+
