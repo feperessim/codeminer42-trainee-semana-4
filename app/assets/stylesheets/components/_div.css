@@ -1,0 +1,30 @@
+.div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: left;
+    align-content: left;
+    flex-direction: row;
+    width: var(--div-width);
+    height: var(--div-height);
+    border: var(--div-border);
+    margin :var(--div-margin);
+}
+
+.div--user {
+    flex-direction: column;
+    width: var(--div-user-width);
+    margin: var(--div-user-margin);
+    padding: var(--div-user-padding);
+    font-family: var(--div-user-font-famliy);
+    font-size: var(--div-user-font-size);
+}
+
+.div--contacts {
+    flex-direction: column;
+    width: var(--div-contacts-width);
+    margin: var(--div-contacts-margin);
+    padding: var(--div-contacts-padding);
+    font-family: var(--div-contacts-font-famliy);
+    font-size: var(--div-contacts-font-size);
+}

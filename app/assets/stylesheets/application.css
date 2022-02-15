@@ -17,4 +17,6 @@
 @import 'settings/_settings.css';
 @import 'generic/_box-sizing.css';
 @import 'generic/_resets.css';
+@import 'elements/_page.css';
 @import 'components/_table.css';
+@import 'components/_div.css';
