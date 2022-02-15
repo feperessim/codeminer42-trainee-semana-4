@@ -1,2 +1,73 @@
 <h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<% if !@user.nil? %>
+  <h4>Username: <%= @user.name %></h2>
+  <h4>Age: <%= @user.age %></h2>
+    <h4>Biography: <%= @user.biography %></h2>
+<% else %>
+      <h3>Error!: user not found</h3>
+<% end %>
+
+
+
+<style>
+ .demo {
+     width:100%;
+     height:100%;
+     border:1px solid #C0C0C0;
+     border-collapse:collapse;
+     border-spacing:2px;
+     padding:5px;
+ }
+ .demo caption {
+     caption-side:top;
+     text-align:center;
+ }
+ .demo th {
+     border:1px solid #C0C0C0;
+     padding:5px;
+     background:#F0F0F0;
+ }
+ .demo td {
+     border:1px solid #C0C0C0;
+     text-align:left;
+     padding:5px;
+     background:#FFFFFF;
+ }
+</style>
+<table class="demo">
+  <caption>Table 1</caption>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+      <th>Header 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
