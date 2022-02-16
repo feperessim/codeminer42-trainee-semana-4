@@ -4,6 +4,10 @@
     --color-anti-flash-white: #edf0f5;
     --color-gainsboro: #dddddd;
     --color-white: #ffffff;
+
+    --body-text-font-family: verdana;
+    --body-background-color: #d3d3d3;
+
     
     --table-border: 1px solid white;
     --table-margin: auto;
@@ -14,4 +18,21 @@
     --table-td-border: 1px solid white;
     --table-td-padding: 0.5rem;
     --table-td-font-size: 18px;
+
+    --div-width: 50%;
+    --div-height: 100%;
+    --div-border: 1px solid;
+    --div-margin: auto;
+
+    --div-contacts-width: 100%;
+    --div-contacts-margin: 50px;
+    --div-contacts-padding: 10px;
+    --div-contacts-font-family: verdana;
+    --div-contacts-font-size: 18px;
+
+    --div-user-width: 100%;
+    --div-user-margin: 50px;
+    --div-user-font-family: verdana;
+    --div-user-font-size: 20px;
+    --div-user-padding: 5px;
 }

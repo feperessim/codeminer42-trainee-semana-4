@@ -1,9 +1,10 @@
 class UsersController < ApplicationController
   def index
-    @users = User.all
+    @users = User.includes(:contacts)
   end
 
   def show
+    @user = User.includes(:contacts, :phones).find_by(id: params[:id])
   end
 
   def new

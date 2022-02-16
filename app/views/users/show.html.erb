@@ -1,2 +1,39 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1>User Details</h1>
+
+<% if @user %>
+  <div class="div--user">
+    <p><b>Username:</b> <%= @user.name %> </p>
+    <p> <b>Age:</b><%= @user.age %></p>
+    <p><b>Biography:</b><%= @user.biography %></p>
+  </div> 
+  <div class="div">
+    <h2>Contacts</h2>
+    <% @user.contacts.each do |contact| %>
+      <div class="div div--contacts">
+	<p><b>Name:</b> <%= contact.name %> </p>
+	<p><b>Birthday:</b> <%= contact.birthday.strftime('%d/%m/%Y') if contact.birthday %> </p>
+	<table class="table">
+	  <caption><h3>Phones</h3></caption>
+	  <thead>
+	    <tr>
+	      <th class="table__th">Number</th>
+	      <th class="table__th">Kind</th>
+	      <th class="table__th">Main</th>
+	    </tr>
+	  </thead>   
+	  <tbody>
+	    <% contact.phones.each do |phone| %>
+	      <tr class="table__tr">
+		<td class="table__td"><%= phone.number %></td>
+		<td class="table__td"><%= phone.kind %></td>
+		<td class="table__td"><%= phone.main %></td>
+	      </tr>
+	    <% end %>
+	  </tbody>
+	</table>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <h3>Error!: user not found</h3>
+<% end %>
