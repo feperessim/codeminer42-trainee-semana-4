@@ -43,6 +43,9 @@
     --div-user-padding: 5px;
 
     --div--error-message-font-size: 18px;
+
+    --div--button-back-width: 10%;
+    --div--button-back-padding: 10px;
     
     --button-font-size: 22px;
     --button-text-align: center;

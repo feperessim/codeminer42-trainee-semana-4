@@ -52,3 +52,16 @@
     color: var(--color-red);
     background-color: var(--color-pale-pink);
 }
+
+.div--button-back {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: flex-end;
+    width: var(--div--button-back-width);
+    padding: var(--div--button-back-padding);
+}
