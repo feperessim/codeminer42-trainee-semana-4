@@ -25,17 +25,28 @@ RSpec.describe "Users", type: :request do
 
   describe "GET /new" do
     it "returns http success" do
-      get "/users/new"
+      get users_new_path
       expect(response).to have_http_status(:success)
+      expect(assigns(:user)).to be_a_new(User)
     end
   end
 
-  describe "GET /create" do
-    it "returns http success" do
-      get "/users/create"
-      expect(response).to have_http_status(:success)
+  describe "POST /create" do
+    context "when a new user is created" do
+      it "returns http status created" do
+        post users_path({ "user": { "name":"New user", "age": "32", "biography":"Hello world" } })
+        expect(response).to have_http_status(:found)
+      end
+    end
+
+    context "when a new user is not created" do
+      it "returns http status success" do
+        post users_path({ "user": { "name":"", "age": "", "biography":"" } })
+        expect(response).to have_http_status(:success)
+      end
     end
   end
+  
 
   describe "GET /edit" do
     it "returns http success" do

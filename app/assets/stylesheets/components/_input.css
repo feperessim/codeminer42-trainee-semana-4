@@ -1,0 +1,21 @@
+.input {
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
+    font-family: var(--input--font-family);
+    font-size: var(--input-text-font-size);
+    font-weight: var(--input-font-weight);
+    padding: 5px;
+    margin: 10px 1px;
+    border-style: none;
+    border-radius: 0px;
+    height:10%;
+    width: 15%;
+}
+
+.input:focus {
+    outline: none;
+    border:1px solid;
+    border-width: 2px;
+    border-color: var(--color-blue-dodger);
+}
+

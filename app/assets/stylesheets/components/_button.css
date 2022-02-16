@@ -1,0 +1,40 @@
+.button {
+    font-size: var(--button-font-size);
+    text-align: var(--button-text-align);
+    text-decoration: var(--button-text-decoration);
+    border: var(--button-border);
+    border-style: var(--button-border-style);
+}
+
+.button--blue {
+    border: var(--button-blue-border);
+    color: var(--color-white);
+    background-color: var(--color-button-blue);
+    cursor: pointer;
+}
+
+.button--blue-new-user {
+    width: var(--button-blue-new-user-width);
+    margin: var(--button-blue-new-user-margin);
+}
+
+.button--blue-create-user {
+    border-style: var(--button-blue-create-user-border-style);
+    border-radius: var(--button-blue-create-user-border-radius);
+    padding: var(--button-blue-create-user-padding);
+    display: var(--button-blue-create-user-display);
+    margin: var(--button-blue-create-user-margin);
+    width: var(--button-blue-create-user-width);
+}
+
+.button--blue:hover {
+    background-color: var(--color-blue-gray-solid);
+}
+
+.button--blue:active {
+    background-color: var(--color-wisteria-light);
+}
+
+.button--blue:disabled {
+    opacity: 0.5;
+}

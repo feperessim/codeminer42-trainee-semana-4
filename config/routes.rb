@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'users' => 'users#index'
-  get 'users/new'
-  get 'users/create'
+  get 'users/new' => 'users#new'
+  post 'users' => 'users#create'
   get 'users/edit'
   get 'users/update'
   get 'users/destroy'
