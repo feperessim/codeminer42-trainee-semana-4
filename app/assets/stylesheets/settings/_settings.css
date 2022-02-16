@@ -27,12 +27,12 @@
     --div-contacts-width: 100%;
     --div-contacts-margin: 50px;
     --div-contacts-padding: 10px;
-    --div-contacts-font-famliy: verdana;
+    --div-contacts-font-family: verdana;
     --div-contacts-font-size: 18px;
 
     --div-user-width: 100%;
     --div-user-margin: 50px;
-    --div-user-font-famliy: verdana;
+    --div-user-font-family: verdana;
     --div-user-font-size: 20px;
     --div-user-padding: 5px;
 }

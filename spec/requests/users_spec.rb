@@ -7,7 +7,7 @@ RSpec.describe "Users", type: :request do
     subject (:user) { users(:trainee) }
     
     it "returns http success" do
-      get "/users"      
+      get users_path
       expect(response).to have_http_status(:success)      
       expect(assigns(:users)).to eq([user])
     end
@@ -17,7 +17,7 @@ RSpec.describe "Users", type: :request do
     subject (:user) { users(:trainee) }
     
     it "returns http success" do
-      get "/users/#{users(:trainee).id}"  
+      get user_path(user)
       expect(response).to have_http_status(:success)
       expect(assigns(:user)).to eq(user)
     end

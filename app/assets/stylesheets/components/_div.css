@@ -16,7 +16,7 @@
     width: var(--div-user-width);
     margin: var(--div-user-margin);
     padding: var(--div-user-padding);
-    font-family: var(--div-user-font-famliy);
+    font-family: var(--div-user-font-family);
     font-size: var(--div-user-font-size);
 }
 
@@ -25,6 +25,6 @@
     width: var(--div-contacts-width);
     margin: var(--div-contacts-margin);
     padding: var(--div-contacts-padding);
-    font-family: var(--div-contacts-font-famliy);
+    font-family: var(--div-contacts-font-family);
     font-size: var(--div-contacts-font-size);
 }
