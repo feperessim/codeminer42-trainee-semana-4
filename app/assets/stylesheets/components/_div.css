@@ -28,3 +28,40 @@
     font-family: var(--div-contacts-font-family);
     font-size: var(--div-contacts-font-size);
 }
+
+.div--button {
+    align-items: right;
+    justify-content: center;
+    border: none;
+}
+
+.field_with_errors,
+.div--create-user {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: left;
+    width: 100%;
+}
+
+.div--error-message {
+    font-size: var(--div--error-message-font-size);
+    color: var(--color-red);
+    background-color: var(--color-pale-pink);
+}
+
+.div--button-back {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: flex-end;
+    width: var(--div--button-back-width);
+    padding: var(--div--button-back-padding);
+}

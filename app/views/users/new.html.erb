@@ -1,2 +1,31 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<%= form_with model: @user do |form| %>
+  <div class="div--user div--create-user">
+    <%= form.label :username %><br/>
+    <%= form.text_field :name, class: "input", required: "required" %>
+    <% @user.errors.full_messages_for(:name).each do |message| %>
+      <div class="div--error-message"><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class="div--user div--create-user">
+    <%= form.label :age %><br/>
+    <%= form.number_field :age, :class => "input" %>
+    <% @user.errors.full_messages_for(:age).each do |message| %>
+      <div class="div--error-message"><%= message %></div>
+    <% end %>
+    
+  </div>
+
+  <div class="div--user div--create-user">
+    <%= form.label :biography %><br/>
+    <%= form.text_area :biography, size: "50x7", :class => "input" %>
+  </div>
+
+  <div class="div--user div--create-user">
+    <%= form.submit 'Create', :class=>"button button--blue button--blue-create-user"%>
+  </div>
+<% end %>
+
+<div class="div--button-back">
+  <%= link_to 'Back', users_path, :class => "button button--blue button--blue-new-user" %>
+</div>

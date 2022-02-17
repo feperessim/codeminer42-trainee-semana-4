@@ -4,11 +4,17 @@
     --color-anti-flash-white: #edf0f5;
     --color-gainsboro: #dddddd;
     --color-white: #ffffff;
-
+    --color-button-blue: #24afff;
+    --color-blue-dodger: #248bff;
+    --color-wisteria-light: #a6A8c5;
+    --color-blue-dodger: #248bff;
+    --color-red: #ff0000;
+    --color-medium-carmine: #A94442;
+    --color-pale-pink: #f2dede;
+    
     --body-text-font-family: verdana;
     --body-background-color: #d3d3d3;
 
-    
     --table-border: 1px solid white;
     --table-margin: auto;
     --table-width: 50%;
@@ -35,4 +41,32 @@
     --div-user-font-family: verdana;
     --div-user-font-size: 20px;
     --div-user-padding: 5px;
+
+    --div--error-message-font-size: 18px;
+
+    --div--button-back-width: 10%;
+    --div--button-back-padding: 10px;
+    
+    --button-font-size: 22px;
+    --button-text-align: center;
+    --button-text-decoration: none;
+    --button-border: 2px solid #000000;
+    --button-border-style: solid;
+    --button-blue-border: none;
+    
+    --button-blue-new-user-width: 100%;/* 22.5%; */
+    --button-blue-new-user-margin: 10px 0px;
+    
+    --button-blue-create-user-border-style: none;
+    --button-blue-create-user-border-radius: 0px;
+    --button-blue-create-user-padding: 5px;
+    --button-blue-create-user-display: inline-block;
+    --button-blue-create-user-margin: 10px 10px;
+    --button-blue-create-user-width: 15%;
+
+    --input-text-color: #000000;
+    --input-text-font-size: 18px;
+    --input--font-family: helvetica;
+    --input-background-color: #ffffff;
+    --input-font-weight: bolder;
 }

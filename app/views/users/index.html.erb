@@ -17,9 +17,13 @@
 	  <td class="table__td"><%= user.phones.length %></td>
 	  <td class="table__td"><%= link_to 'Show', user_path(user) %></td>
 	</tr>
-      <% end %>
+	<% end %>
     </tbody>
   </table>
+  <div class="div div--button">
+    <%= link_to 'New', users_new_path, class: "button button--blue button--blue-new-user"%>
+  </div>
+  
 <% else %>
   <h2>Error! Could not retrieve Users from database</h2>
 <% end %>
