@@ -34,14 +34,18 @@ RSpec.describe "Users", type: :request do
   describe "POST /create" do
     context "when a new user is created" do
       it "returns http status created" do
-        post users_path({ "user": { "name":"New user", "age": "32", "biography":"Hello world" } })
+        expect {
+          post users_path({ "user": { "name":"New user", "age": "32", "biography":"Hello world" } })
+        }.to change {  User.count }
         expect(response).to have_http_status(:found)
       end
     end
 
     context "when a new user is not created" do
       it "returns http status success" do
-        post users_path({ "user": { "name":"", "age": "", "biography":"" } })
+        expect {
+          post users_path({ "user": { "name":"", "age": "", "biography":"" } })
+        }.not_to change {  User.count }
         expect(response).to have_http_status(:success)
       end
     end
