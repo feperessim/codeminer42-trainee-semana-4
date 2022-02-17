@@ -53,16 +53,32 @@ RSpec.describe "Users", type: :request do
   
 
   describe "GET /edit" do
+    subject (:user) { users(:trainee) }
+    
     it "returns http success" do
-      get "/users/edit"
+      get user_edit_path(user)
       expect(response).to have_http_status(:success)
+      expect(assigns(:user)).to eq(user)
     end
   end
 
-  describe "GET /update" do
-    it "returns http success" do
-      get "/users/update"
-      expect(response).to have_http_status(:success)
+  describe "GET /update" do    
+    context "when a user is updated" do
+      it "returns http updated" do
+        expect {
+          patch user_path(User.first), params: { "user": { "name": "Felipe Peressim" } }
+        }.to change { User.first.name }
+        expect(response).to have_http_status(:found)
+      end
+    end
+
+    context "when a user is not updated" do
+      it "returns http success" do
+        expect {
+          patch user_path(User.first), params: { "user": { "name": "" } }
+        }.not_to change { User.first.name }
+        expect(response).to have_http_status(:success)
+      end
     end
   end
 
