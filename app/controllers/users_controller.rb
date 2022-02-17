@@ -22,9 +22,17 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = User.includes(:contacts, :phones).find_by(id: params[:id])
   end
 
   def update
+    @user = User.includes(:contacts, :phones).find_by(id: params[:id])    
+
+    if @user.update(user_params)
+      redirect_to @user
+    else
+      render :edit
+    end
   end
 
   def destroy
