@@ -82,10 +82,12 @@ RSpec.describe "Users", type: :request do
     end
   end
 
-  describe "GET /destroy" do
+  describe "GET /destroy" do   
     it "returns http success" do
-      get "/users/destroy"
-      expect(response).to have_http_status(:success)
+      expect {
+        delete user_path(User.first)
+      }.to change {  User.count }
+      expect(response).to have_http_status(:found)
     end
   end
 

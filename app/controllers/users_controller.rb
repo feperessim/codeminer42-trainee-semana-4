@@ -26,7 +26,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.includes(:contacts, :phones).find_by(id: params[:id])    
+    @user = User.includes(:contacts, :phones).find_by(id: params[:id])
 
     if @user.update(user_params)
       redirect_to @user
@@ -36,6 +36,10 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    @user = User.includes(:contacts, :phones).find_by(id: params[:id])
+    @user.destroy
+
+    redirect_to @user
   end
 
   private
